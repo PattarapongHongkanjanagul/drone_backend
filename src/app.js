@@ -11,7 +11,7 @@ const app = express();
 
 
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://127.0.0.1:5173'],
+    origin: ['http://localhost:5173', 'http://127.0.0.1:5173','https://dronefrontend.vercel.app'],
     methods: ['GET', 'POST', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: false
@@ -40,4 +40,5 @@ const PORT = process.env.PORT || 3000;
 // 👇 ให้ฟังที่ทุกอินเทอร์เฟซ (กันเคสบางเครื่อง bind แค่ ::1/IPv6)
 app.listen(PORT, '0.0.0.0', () => {
     console.log(`drone-api listening on port ${PORT}`);
+
 });
