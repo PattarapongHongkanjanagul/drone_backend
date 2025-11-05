@@ -1,0 +1,19 @@
+### get configs
+GET http://localhost:3000/configs/3001
+
+### get status
+GET http://localhost:3000/status/3001
+
+### get logs
+GET http://localhost:3000/logs/3001
+
+### post logs
+POST http://localhost:3000/logs
+Content-Type: application/json
+
+{
+    "drone_id": 3001,
+    "drone_name": "Dot Dot",
+    "country": "India",
+    "celsius": 45
+}
